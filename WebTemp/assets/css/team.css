@@ -1,0 +1,153 @@
+.team-slider .swiper{
+    height: 400px;
+ }
+ .team-slider {
+     width: 85%;
+     margin: 40px 0px;
+ }
+ 
+ .team-slider .swiper-slide{
+     position: relative;
+     height: 350px;
+     overflow: hidden;
+ }
+ 
+ .team-slider .swiper-slide img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+ 
+ .team-slider .swiper-slide .team-details{
+    position: absolute; 
+    content: '';
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    transform: translateY(150px);
+    width: 70%;
+    transition: transform 0.3s;
+    visibility: hidden;
+    opacity: 0;
+ }
+ .team-slider .swiper-slide::before{
+     position: absolute;
+     content: '';
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(to right,rgba(6, 30, 81, 0.4) 100%, transparent 20%);
+     opacity: 0;
+     transition: 0.3s;
+ }
+ .swiper-slide:hover .team-details{
+    opacity: 1;
+    visibility: visible;
+     transform: translateY(0px);
+ }
+ .swiper-slide:hover::before{
+     opacity: 1;
+ }
+ .team-details h2,.team-details h4{
+     margin: 10px;
+  }
+  .team-details h2{
+     font-size: 25px;
+  }
+  .team-details h4{
+     color: #FF5E13;
+  }
+ 
+  .swiper-slide .share{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 22%;
+     height: 100%;
+     background-color: #00225A;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: end;
+     padding: 20px 0px;
+  }
+  .swiper-slide .share div{
+     width: 100%;
+  }
+  .share a{
+     text-decoration: none;
+     color: white;
+  }
+  .share h2{
+     width: 100%;
+     text-align: center;
+     margin: 0;
+  }
+  .share .share-icon{
+     width: 100%;
+     text-align: center;
+  }
+ 
+  .share .add-info a{
+     background-color: #FF5E13;
+     padding: 5px 10px;
+     font-size: 14px;
+     transition: 0.3s;
+  }
+  .swiper-slide:hover .share{
+     background-color: #FF5E13;
+     transition: 0.3s;
+  }
+  .swiper-slide:hover .add-info a{
+     background-color: #00225A;
+     transition: 0.3s;
+  }
+ 
+  .swiper-slide .share-icon ul{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+     gap: 20px;
+     list-style: none;
+  }
+  .share-icon ul li a{
+     text-align: center;
+  }
+  .share-icon ul li a i{
+     padding-top: 7px;
+     width: 30px;
+     height: 30px;
+     background-color: #00225A;
+  }
+ 
+  .share-link + ul{
+     transform: translateX(30px);
+     visibility: hidden;
+  }
+  
+   .share-link:hover + ul, .share-link:hover + ul, .share-link:hover + ul{
+     transform: translateX(0px);
+     transition: 0.5s; 
+     visibility: visible;
+  }
+  .share-link + ul:hover{
+     visibility: visible;
+     transform: translateX(0px);
+  }
+  .team h1{
+    font-size: 40px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets{
+    bottom: 0px;
+    z-index: 4;
+  }
+  .swiper-pagination-bullet-active{
+    background: #FF5E13;
+  }
+  

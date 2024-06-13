@@ -1,0 +1,117 @@
+.projects{
+    margin: 150px 0px;
+    width: 100%;
+    background-image: url(../img/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 450px;
+    position: relative;
+}
+.projects-content{
+    position: absolute;
+    content: '';
+    top: 25%;
+    left: 0;
+    transform: rotate(270deg);
+    width: 300px;
+}
+.projects-content h4{
+    color: #FF5E13;
+}
+.projects-content h1{
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+
+
+/* Slider CSS */
+
+.project-slider{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    width: 60%;
+}
+
+.project-slider .swiper {
+    width: 100%;
+    height: 300px;
+  }
+
+  .project-slider .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-slider .slide-details{
+    position: absolute;
+    bottom: 0px;
+    width: 80%;
+    padding: 10px 0px;
+    transform: translateY(160px);
+    background-color: rgba(250,250,250,0.4);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .project-slider .slide-details h4,.slide-details h3, .slide-details h5{
+    margin: 5px 0px;
+    color: #00225A;
+  }
+  .project-slider .slide-details h3:hover{
+    color: #FF5E13;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .project-slider .slide-details h4{
+    font-size: 15px;
+  }
+  .project-slider .slide-details h5{
+    font-size: 13px;
+  }
+
+  
+  .project-slider .swiper-slide:hover .slide-details{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+  .project-slider   .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-slider .swiper-button-prev,.project-slider .swiper-button-next{
+    color: white;    
+    padding: 15px;
+    transition: 0.3s;
+    background-color: rgba(250,250,250,0.4);
+  }
+  .project-slider .swiper-button-next:hover,.project-slider .swiper-button-prev:hover{
+    background-color: #FF5E13;
+  }
+  .project-slider .swiper-button-prev{
+    left: 0;
+  }
+  .project-slider .swiper-button-next{
+    right: 0;
+  }
+  .project-slider .swiper-button-prev::after,.project-slider .swiper-button-next::after{
+    font-size: 23px;
+    opacity: 1;
+  }
+  

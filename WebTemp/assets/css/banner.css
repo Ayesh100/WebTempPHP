@@ -1,0 +1,257 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  height: 600px;
+  z-index: 0;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  position: relative;
+}
+
+.slideshow-container:hover .prev,.slideshow-container:hover .next{
+  background-color: rgba(255, 255, 255, 0.8);   
+  color: black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 999;
+}
+.slideshow-container .prev:hover,.slideshow-container .next:hover{
+    background-color: rgba(255, 106, 0, 0.8);
+    color: white;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+
+/* Caption text */
+.text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  width: 47%;
+}
+.text .sub-heading{
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+  animation-name: sub-heading;
+  animation-delay: 0.7s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes sub-heading{
+  from{
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.text .sub-heading:nth-child(1){
+  color: #FF5E13;
+}
+.text h1{
+  font-size: 75px;
+  color: #00225A;
+  margin: 0;
+  animation-name: slides-heading;
+  animation-delay: 1.2s;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  opacity: 0;
+}
+@keyframes slides-heading{
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.text .span-dream{
+  color: #FF5E13;
+}
+
+.text p{
+  width: 500px;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #00225A;
+  line-height: 30px;
+  animation-name: slides-para;
+  animation-delay: 1.5s;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+@keyframes slides-para{
+  from{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+.text .buttons{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 400px;
+  gap: 25px;
+}
+.buttons .button1,.buttons .button2{
+  animation-name: button1;
+  animation-delay: 1.8s;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+@keyframes button1{
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.buttons .button2{
+  animation-name: button2;
+  animation-delay: 2.2s;
+  animation-timing-function: ease-out;
+}
+@keyframes button2{
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.buttons a{
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  display: block;
+  width: 170px;
+  height: 55px;
+  background-color: rgba(250,250,250,0.3);
+  padding-top: 17px;
+}
+.buttons a:hover{
+  background-color: white;
+  color: #00225A;
+  transition: 0.3s;
+  transition-delay: 0.8s;
+}
+
+
+ .button1 a span:nth-child(1),.button1 a span:nth-child(2),.button1 a span:nth-child(3),.button1 a span:nth-child(4),.button2 a span:nth-child(1),.button2 a span:nth-child(2),.button2 a span:nth-child(3),.button2 a span:nth-child(4){
+  position: absolute;
+  content: '';
+  background-color: #FF5E13;  
+}
+
+.button1 a span:nth-child(1),.button1 a span:nth-child(3),.button2 a span:nth-child(1),.button2 a span:nth-child(3){
+  width: 0%;
+  height: 2px;
+}
+.button1 a span:nth-child(1),.button2 a span:nth-child(1){
+  top: 0;
+  left: 0;
+}
+.button1 a span:nth-child(3),.button2 a span:nth-child(3){
+  bottom: 0;
+  right: 0;
+}
+.button1 a:hover span:nth-child(1),.button1 a:hover span:nth-child(3),.button2 a:hover span:nth-child(1),.button2 a:hover span:nth-child(3){
+  width: 100%;
+  transition: 0.2s  
+}
+.button1 a:hover span:nth-child(3),.button2 a:hover span:nth-child(3){
+  transition-delay: 0.4s;
+}
+.button1 a span:nth-child(2),.button1 a span:nth-child(4),.button2 a span:nth-child(2),.button2 a span:nth-child(4){
+width: 2px;
+height: 0%;
+}
+.button1 a span:nth-child(2),.button2 a span:nth-child(2){
+  top: 0;
+  right: 0;
+}
+.button1 a span:nth-child(4),.button2 a span:nth-child(4){
+  bottom: 0;
+  left: 0;
+}
+.button1 a:hover span:nth-child(2),.button1 a:hover span:nth-child(4),.button2 a:hover span:nth-child(2),.button2 a:hover span:nth-child(4){
+  height: 100%;
+  transition: 0.2s;
+}
+.button1 a:hover span:nth-child(2),.button2 a:hover span:nth-child(2){
+  transition-delay: 0.2s;
+}
+.button1 a:hover span:nth-child(4),.button2 a:hover span:nth-child(4){
+  transition-delay: 0.6s;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

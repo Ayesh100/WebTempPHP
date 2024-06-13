@@ -1,0 +1,36 @@
+.keyQualities{
+    width: 87%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 0px;
+}
+.card1,.card2,.card3{
+    width: 30%;
+    height: 200px;
+    background-image: url(../img/card1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card2{
+    background-image: url(../img/card2.jpg);
+}
+.card3{
+    background-image: url(../img/card3.jpg);
+}
+.card-content{
+    width: 85%;
+    color: white;
+}
+.card-content h1{
+    font-size: 25px;
+}
+.card-content p{
+    line-height: 28px;
+}
+
+

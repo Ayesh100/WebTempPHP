@@ -1,0 +1,75 @@
+.testemonial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 150px 0px;
+}
+.testemonial-container{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testemonial-content{
+    width: 38%;
+}
+.testemonial-content h4{
+    color: #FF5E13;
+    margin: 10px 0px;
+}
+.testemonial-content h1{
+    color: #00225A;
+    margin: 0;
+    font-size: 55px;
+}
+.testemonial-content p{
+    margin-top: 40px;
+    font-size: 18px;
+    color: #00225A;
+    line-height: 30px;
+}
+.review-container{
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review1,.review2{
+    background-color: #EAF5FF;
+    border-radius: 0px 25px 0px 25px;
+    padding: 30px;
+    width: 48%;
+}
+.review2{
+    margin-top: 80px;
+}
+.review1 p,.review2 p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.review1 p i:nth-child(1), .review2 p i:nth-child(1){
+    transform: translate(-7px,-10px);
+}
+.review1 p i:nth-child(2), .review2 p i:nth-child(2){
+    transform: translate(7px,10px);
+}
+.review-profile{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+}
+.review-profile h5,.review-profile p{
+    margin: 0;
+}
+.review-profile h5{
+    color: #FF5E13;
+    font-size: 15px;
+}
+.review-profile p{
+    color: #00225A;
+}
+

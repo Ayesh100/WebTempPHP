@@ -1,0 +1,31 @@
+.brands {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands .swiper {
+    width: 85%;
+}
+.brands .swiper-slide {
+    animation: moveSlide 20s linear infinite;
+    position: relative; 
+}
+
+@keyframes moveSlide {
+    0% {
+        left: 0; 
+    }
+    100% {
+        left: -100%; 
+    }
+}
+.brands .swiper-slide img {
+    width: 100%;
+    object-fit: contain;
+    height: 80px; /* Set the height to 'auto' to maintain aspect ratio */
+}
+.brands .swiper-slide .yahoo,.brands .swiper-slide .bloom,.brands .swiper-slide .yahoof{
+    object-fit: cover;
+} 

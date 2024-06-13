@@ -1,0 +1,25 @@
+.numbers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.numbers .numbers-content{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.numbers-content h1,.numbers-content h2{
+    margin: 0;
+    text-align: center;
+} 
+.numbers-content h1{
+    font-size: 55px;
+    color: #00225A;
+}
+.numbers-content h2{
+    font-size: 23px;
+    color: #FF5E13;
+}

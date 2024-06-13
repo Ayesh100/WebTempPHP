@@ -1,0 +1,81 @@
+.explore{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/2-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 150px 0px;
+}
+.explore-img{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/building.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.explore-container{
+    width: 50%;
+    height: 100%;
+    position: relative;
+   
+}
+.explore-container::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.explore-container .explore-content{
+    position: relative;
+    top: 100px;
+    left: 60px;
+    width: 75%;
+    color: white;
+}
+.explore-content h4{
+    color: #FF5E13;
+    margin: 0;
+}
+.explore-content h1{
+    font-size: 45px;
+    margin-top: 20px;
+}
+.explore-content p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.explore-content button{
+    width: 170px;
+    height: 58px;
+    border: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.explore-content button a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #FF5E13;
+    color: white;
+    padding-top: 19px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.explore-content button a:hover{
+    background-color: white;
+    color: #00225A;
+}
+
